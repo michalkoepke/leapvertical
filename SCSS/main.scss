@@ -1,0 +1,94 @@
+// My variables:
+
+$my-primary-color: #0080b2;
+$my-secondary-color: #00beef;
+$my-medium-color: #006787;
+$my-dark-color: #103144;
+$my-dark2-color: #002236;
+$my-dark3-color: #001c23;
+$my-light2-color: #cfd8dc;
+$my-light3-color: #dbdee0;
+$my-light-color: #eceff1;
+$my-light4-color: #f8f9fa;
+$my-accent-color: #ffd000;
+$my-white-color: #ffffff;
+
+$my-blue-gray-color: #204b60;
+$my-form-color: #337a96;
+
+// greys
+
+$my-grey-color1: #546e7a;
+
+// akcenty
+
+$color-secondary-1-0: #ffb100;
+$color-secondary-1-1: #ffbc22;
+$color-secondary-1-2: #ffb100;
+$color-secondary-1-3: #ffb100;
+$color-secondary-1-4: #cd8f00;
+
+$color-secondary-2-0: #ff1e00;
+$color-secondary-2-1: #ff3c22;
+$color-secondary-2-2: #ff1e00;
+$color-secondary-2-3: #ff1e00;
+$color-secondary-2-4: #cd1800;
+
+$theme-colors: (
+    "primary": $my-primary-color,
+    "secondary": $my-secondary-color,
+    "dark": $my-dark-color,
+    "dark2": $my-dark2-color,
+    "medium": $my-medium-color,
+    "medium-2": $my-blue-gray-color,
+    "light2": $my-light2-color,
+    "light3": $my-light3-color,
+    "light4": $my-light4-color,
+    "light": $my-light-color,
+    "accent": $color-secondary-2-2,
+    "accent2": $color-secondary-1-2,
+    "white": $my-white-color,
+    "f-color": $my-form-color,
+    "grey": $my-grey-color1,
+    "dark3": $my-dark3-color,
+);
+
+$border-radius: 2px;
+$border-radius-sm: 2px;
+$border-radius-lg: 2px;
+
+// My utilities:
+
+$utilities: () !default;
+$utilities: map-merge(
+    (
+        "input-padding": (
+            property: padding,
+            class: ip,
+            values: (
+                0: 0,
+                1: 0.3rem,
+                2: 0.5rem,
+                3: 0.7rem,
+                4: 0.9rem,
+                5: 1rem,
+            ),
+        ),
+    ),
+    $utilities
+);
+
+// my functions
+
+// $theme-color-interval: 8% !default;
+
+// @function theme-color-level($color-name: "primary", $level: 0) {
+//     $color: theme-color($color-name);
+//     $color-base: if($level > 0, #000, #fff);
+//     $level: abs($level);
+
+//     @return mix($color-base, $color, $level * $theme-color-interval);
+// }
+
+@import "style";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";

@@ -1,0 +1,242 @@
+// moje customowe style:
+
+html,
+body {
+    height: 100%;
+    font-family: "Montserrat", sans-serif !important;
+    font-weight: 400 !important;
+
+    scroll-behavior: smooth;
+}
+
+// usuniecie standartowych obwódek przyciskow
+
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+// responsywny navbar, logo itd
+
+.logo-kontener {
+    width: 240px;
+    height: 150px;
+    transition: 0.5s;
+}
+
+.logo-kontener-small {
+    width: 300px;
+    height: 50px;
+    transition: 0.5s;
+    // box-sizing: border-box;
+}
+
+.logotop {
+    background-image: url("/images/LV-logo-top-2.svg");
+    // background-attachment: fixed;
+
+    background-position: center;
+    background-repeat: no-repeat;
+
+    transition: 0.5s;
+}
+
+.logotop-no-typo {
+    background-image: url("/images/LV-logo-horizontal.svg");
+    // background-attachment: fixed;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 1rem;
+
+    transition: 0.5s;
+}
+
+.navbar-small {
+    padding: 0rem;
+    transition: 0.5s;
+}
+
+.navbar {
+    transition: 0.5s;
+}
+
+// navbar-toggler icon
+
+.fa-bars {
+    color: #00beef;
+}
+
+#landpage {
+    margin-top: 160px;
+}
+
+@media only screen and (max-width: 600px) {
+    #landpage {
+        margin-top: 40px;
+    }
+}
+
+// floating button
+
+/* floating button */
+
+#floating {
+    position: fixed;
+    right: 0px;
+    bottom: 50px;
+    width: 50px;
+    height: 50px;
+    background-color: #000000;
+    color: #33beff;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: none;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    z-index: 99;
+}
+
+// responsywna wysokosc sekcji customers
+
+@media only screen and (min-width: 768px) {
+    .special {
+        height: 90%;
+    }
+}
+
+// formularz
+
+.form-login {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
+}
+
+.form-control::-webkit-input-placeholder {
+    color: white !important;
+}
+
+.form-control:focus {
+    // border-color: #00beef !important;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(0, 190, 239, 1) !important;
+}
+
+.pole {
+    height: 200px !important;
+}
+
+// links
+
+a:visited,
+a:link,
+a:active {
+    text-decoration: none;
+}
+
+a {
+    color: #00beef;
+    text-decoration: none;
+
+    display: inline-block;
+    padding: 5px 10px;
+    position: relative;
+}
+
+a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #00beef;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+a:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+.image-background {
+    background-image: url("/images/blue-gradient-3.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.karty {
+    box-sizing: border-box;
+}
+// .stopka {
+//     color: theme-color-level(primary, -10);
+// }
+
+// .stopka {
+//     color: #006787;
+//     background-color: #001c23;
+// }
+
+// about us
+
+.aboutUs {
+    background-image: url("/images/LV-ilustracja-2-aboutUs.svg");
+    // background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    // background-size: cover;
+}
+
+// KARUZELA
+
+.bd-example {
+    position: relative;
+    padding: 1rem;
+    margin: 1rem -0.75rem 0;
+    border: solid #dee2e6;
+    border-width: 1px 0 0;
+}
+
+// TESTIMONIALS
+
+.testimonial1 .testi1 .thumb {
+    padding: 10px 20px 10px;
+    padding-left: 90px;
+    margin-left: -35px;
+}
+
+.testimonial1 .testi1 .thumb .thumb-img {
+    width: 60px;
+    left: 20px;
+    top: -10px;
+}
+
+.testimonial1 .testi1 h5 {
+    line-height: 30px;
+    font-size: 18px;
+}
+
+.testimonial1 .testi1 .devider {
+    height: 1px;
+    background: rgba(120, 130, 140, 0.13);
+    width: 100px;
+}
+
+.test {
+    width: 60px;
+    height: 60px;
+}
+
+.fa-quote-right {
+    font-size: 1.3rem;
+    padding: 0.3rem;
+}
