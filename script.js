@@ -101,6 +101,7 @@ function sprawdz(e) {
         zmniejsz();
 
 
+
     }
 
 }
