@@ -34,10 +34,10 @@ formularz.addEventListener('submit', e => {
 function zmniejsz() {
 
     box.classList.remove('logo-kontener');
-    box.classList.add('logo-kontener-small');
+    box.classList.add('logo-kontener-horizontal');
 
     logoInner.classList.remove('logotop');
-    logoInner.classList.add('logotop-no-typo');
+    logoInner.classList.add('logotop-maly');
 
     navbar.classList.add('navbar-small');
 
@@ -45,20 +45,74 @@ function zmniejsz() {
 
 }
 
-function powieksz() {
 
 
-    box.classList.remove('logo-kontener-small');
-    box.classList.add('logo-kontener');
 
-    logoInner.classList.remove('logotop-no-typo');
-    logoInner.classList.add('logotop');
 
-    navbar.classList.remove('navbar-small');
 
-    mybutton.style.display = "none";
+// function zmniejszNoTypo() {
+
+//     box.classList.remove('logo-kontener');
+//     box.classList.add('logo-kontener-small');
+
+//     logoInner.classList.remove('logotop');
+//     logoInner.classList.add('logotop-no-typo');
+
+//     navbar.classList.add('navbar-small');
+
+//     mybutton.style.display = "flex";
+
+// }
+
+
+
+
+// function powieksz() {
+
+
+//     box.classList.remove('logo-kontener-horizontal');
+//     box.classList.add('logo-kontener');
+
+//     logoInner.classList.remove('logotop-maly');
+//     logoInner.classList.add('logotop');
+
+//     navbar.classList.remove('navbar-small');
+
+//     mybutton.style.display = "none";
+
+// }
+
+
+// function powieksz2() {
+
+
+//     box.classList.remove('logo-kontener-horizontal');
+//     box.classList.add('logo-kontener-small');
+
+//     logoInner.classList.remove('logotop-maly');
+//     logoInner.classList.add('logotop-no-typo');
+
+//     // navbar.classList.remove('navbar-small');
+
+//     mybutton.style.display = "none";
+
+
+
+// }
+
+
+function zmniejszLogo() {
+
+
+    box.classList.remove('logo-kontener');
+    box.classList.add('logo-kontener-horizontal-mobile');
+
+    console.log("zmniejszam logo");
+
+
 
 }
+
 
 
 
@@ -86,11 +140,8 @@ function sprawdz(e) {
 
 
 
-            } else {
-
-                powieksz();
-
             }
+
 
 
         }
@@ -98,11 +149,15 @@ function sprawdz(e) {
 
     } else {
 
-        zmniejsz();
-
-
-
+        zmniejszLogo();
     }
+
+
+
+
+
+
+
 
 }
 

@@ -13,26 +13,46 @@ body {
 
 .logo-kontener {
   width: 240px;
-  height: 150px;
+  height: 120px;
   transition: 0.5s;
 }
 
 .logo-kontener-small {
+  width: 80px;
+  height: 50px;
+  transition: 0.5s;
+}
+
+.logo-kontener-horizontal {
   width: 300px;
+  height: 50px;
+  transition: 0.5s;
+}
+
+.logo-kontener-horizontal-mobile {
+  width: 200px;
   height: 50px;
   transition: 0.5s;
 }
 
 .logotop {
   background-image: url("../images/LV-logo-top-2.svg");
-  background-position: center;
+  background-position: left;
   background-repeat: no-repeat;
   transition: 0.5s;
 }
 
-.logotop-no-typo {
+.logotop-maly {
   background-image: url("../images/LV-logo-horizontal.svg");
-  background-position: center;
+  background-position: left;
+  background-repeat: no-repeat;
+  margin-left: 1rem;
+  transition: 0.5s;
+}
+
+.logotop-no-typo {
+  background-image: url("../images/LV-logo-top-no-typo.svg");
+  background-position: left;
   background-repeat: no-repeat;
   margin-left: 1rem;
   transition: 0.5s;
@@ -117,7 +137,7 @@ a {
   position: relative;
 }
 
-a:after {
+.special-link:after {
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
   content: "";
@@ -130,7 +150,7 @@ a:after {
   width: 0;
 }
 
-a:hover:after {
+.special-link:hover:after {
   width: 100%;
   left: 0;
 }
