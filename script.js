@@ -67,20 +67,20 @@ function zmniejsz() {
 
 
 
-// function powieksz() {
+function powieksz() {
 
 
-//     box.classList.remove('logo-kontener-horizontal');
-//     box.classList.add('logo-kontener');
+    box.classList.remove('logo-kontener-horizontal');
+    box.classList.add('logo-kontener');
 
-//     logoInner.classList.remove('logotop-maly');
-//     logoInner.classList.add('logotop');
+    logoInner.classList.remove('logotop-maly');
+    logoInner.classList.add('logotop');
 
-//     navbar.classList.remove('navbar-small');
+    navbar.classList.remove('navbar-small');
 
-//     mybutton.style.display = "none";
+    mybutton.style.display = "none";
 
-// }
+}
 
 
 // function powieksz2() {
@@ -114,6 +114,19 @@ function zmniejszLogo() {
 }
 
 
+function PowiekszLogo() {
+
+
+    box.classList.remove('logo-kontener-horizontal-mobile');
+    box.classList.add('logo-kontener');
+
+    console.log("powiekszam logo");
+
+
+
+}
+
+
 
 
 
@@ -129,6 +142,8 @@ function sprawdz(e) {
 
     if (e.matches) {
 
+
+
         window.onscroll = function () { shrink() };
 
 
@@ -138,6 +153,11 @@ function sprawdz(e) {
 
                 zmniejsz();
 
+
+
+            } else if (e.matches) {
+
+                powieksz();
 
 
             }
@@ -150,6 +170,9 @@ function sprawdz(e) {
     } else {
 
         zmniejszLogo();
+
+
+
     }
 
 
