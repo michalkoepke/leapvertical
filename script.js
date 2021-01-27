@@ -10,6 +10,10 @@ const navbar = document.querySelector(".navbar");
 const mybutton = document.getElementById("floating");
 
 
+
+
+
+
 // formularz
 
 
@@ -17,16 +21,13 @@ const formularz = document.querySelector(".formularz");
 
 formularz.addEventListener('submit', e => {
     e.preventDefault();
-
-
-
-
-
-
 });
 
 
 
+
+
+// zmniejszanie paska
 
 
 
