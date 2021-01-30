@@ -1,12 +1,7 @@
 const box = document.querySelector("#logo-box");
-
 const logoInner = document.querySelector("#logo-inner");
-
 const logoKontener = document.querySelector(".logo-kontener");
-
 const navbar = document.querySelector(".navbar");
-
-
 const mybutton = document.getElementById("floating");
 
 
@@ -143,6 +138,8 @@ function sprawdz(e) {
 
     if (e.matches) {
 
+        PowiekszLogo();
+
 
 
         window.onscroll = function () { shrink() };
@@ -168,7 +165,7 @@ function sprawdz(e) {
         }
 
 
-    } else {
+    } else if (!e.matches) {
 
         zmniejszLogo();
 
